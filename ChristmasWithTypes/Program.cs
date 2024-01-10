@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ChristmasWithTypes
 {
@@ -7,18 +8,17 @@ namespace ChristmasWithTypes
         static void Main(string[] args)
         {
             var xmas = new Christmas();
-
-            var xmasDay = Christmas.Day.Thursday;
+            
+            
+            var xmasDay = "Thursday";
 
             //TODO set Santa's name to Kris Kringle
             xmas.Santa = "Kris Kringle";
 
             //TODO Insert 3 presents you would like for xmas.  They must be strings
-            string String1 = "Capitals tickets";
-            string String2 = "Ovi jersey";
-            string String3 = "Penguins loss";
-   
-            xmas.Presents =  new string[3]{ String1 , String2 , String3 }; 
+         
+
+               xmas.Presents =  new string[3]{ "Capitals tickets" , "Ovi jersey" , "Penguis loss" }; 
 
             //TODO Set the TreeHeight to 10
             xmas.TreeHeight = 10;
